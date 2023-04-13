@@ -62,7 +62,6 @@ public class AlunoServiceImpl implements IAlunoService {
     Aluno aluno = repository.findById(id).get();
 
     return aluno.getAvaliacoes();
-
   }
 
 }
