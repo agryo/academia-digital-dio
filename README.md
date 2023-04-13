@@ -91,9 +91,9 @@ saber. E caso você conheça alguém que se identidique com o conteúdo, não de
 
 Se possível:
 
-⭐️ Star o projeto
+⭐️ Star o projeto.
 
-🐛 Encontrar e relatar issues
+🐛 Encontrar e relatar issues.
 
 ------------
 
