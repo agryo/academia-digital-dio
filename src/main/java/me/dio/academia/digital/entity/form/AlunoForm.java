@@ -14,18 +14,18 @@ import java.time.LocalDate;
 public class AlunoForm {
 
   @NotEmpty(message = "Preencha o campo corretamente.")
-  @Size(min = 3, max =50, message = "'${validatedValue}' precisa estar entre {min} e {max} caracteres.")
+  @Size(min = 3, max = 50, message = "O nome '${validatedValue}' precisa ter entre {min} e {max} caracteres.")
   private String nome;
 
   @NotEmpty(message = "Preencha o campo corretamente.")
-  //@CPF(message = "'${validatedValue}' é inválido!")
+  @CPF(message = "O número de CPF '${validatedValue}' é inválido!")
   private String cpf;
 
   @NotEmpty(message = "Preencha o campo corretamente.")
-  @Size(min = 3, max =50, message = "'${validatedValue}' precisa estar entre {min} e {max} caracteres.")
+  @Size(min = 3, max =50, message = "O bairro '${validatedValue}' precisa ter entre {min} e {max} caracteres.")
   private String bairro;
 
   @NotNull(message = "Prencha o campo corretamente.")
-  @Past(message = "Data '${validatedValue}' é inválida.")
+  @Past(message = "A data de nascimento '${validatedValue}' é inválida.")
   private LocalDate dataDeNascimento;
 }
